@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2F Sparring Booking || Smmartist</title>
+</head>
+<body>
+    
+    <% if (booking) { %>
+        <div>
+            <p><b>ID:</b><br> <%= booking.tanah_id %></p>
+            <p><b>Day:</b><br> <%= booking.day %></p>
+            <p><b>Time:</b><br> <%= booking.time %></p>
+        </div>
+    <% } else { %>
+        <p>No product found.</p>
+    <% } %>
+
+
+</body>
+</html>

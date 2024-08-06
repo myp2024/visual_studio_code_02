@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Successfully Signed Up | Smmartist</title>
+
+<head></head>
+<body>
+    <h1>Accounts Successfully Registered</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Username</td>
+                <td>Email</td>
+                <td>Password</td>
+                <td>Gender</td>
+                <td>Age</td>
+                <td>Height</td>
+                <td>Weight</td>
+                <td>Account_id</td>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0; i < accounts.length; i++) { %>
+                <tr>
+                    <td><%= accounts[i].username %></td>
+                    <td><%= accounts[i].email %></td>
+                    <td><%= accounts[i].password %></td>
+                    <td><%= accounts[i].gender %></td>
+                    <td><%= accounts[i].age %></td>
+                    <td><%= accounts[i].height %></td>
+                    <td><%= accounts[i].weight %></td>
+                    <td><%= accounts[i].account_id %></td>
+                </tr>
+            <% } %>
+            
+        </tbody>
+    </table>
+
+</body>
+
+</html>

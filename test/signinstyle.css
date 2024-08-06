@@ -1,0 +1,180 @@
+/* sorry cher btw, some of the styles I put 
+directly on the html code itself for easy coding*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+/* sign in page */
+
+#title1 {
+    color: #ff0f0f;
+    font-family: League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    width: auto;
+    height: 75px;
+    margin-left: 687px;
+    margin-top: 100px;
+}
+
+.signin {
+    width: 335px;
+    height: 400px;
+    background: #343333;
+    color: #ffffff;
+    border-radius: 17px;
+    padding: 30px 40px;
+    margin: auto;
+    margin-top: -10px;
+}
+
+.toggleinup { 
+    display: flex; 
+    min-height: 50px; 
+    width: 300px;
+}
+
+.toggleinup a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.toggleinup .in:hover {
+    background-color: #545454;
+    border-radius: 50px;
+}
+
+.toggleinup .up:hover {
+    background-color: #545454;
+    border-radius: 50px;
+}
+
+.signin h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.inputbox1 {
+    height: 50px;
+    margin-left: 20px;
+}
+
+#inputbox2 {
+    width: 220px;
+}
+
+.signin .remember-forgot {
+    font-size: 8px;
+    margin-top: -25px;
+}
+
+.remember-forgot label input {
+    accent-color: #ffffff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.guest a {
+    color: #ffffff;
+    font-size: 10px;
+    margin-left: 90px;
+}
+
+.signin .btn {
+    width: 20%;
+    height: 25px;
+    background: #ffffff;
+    border-radius: 35px;
+    font-weight: 500;
+    font-size: 9px;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+
+/* inout box design */
+.inputbox1 input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 13px;
+    color:#ffffff;
+}
+.inputbox1 input::placeholder {
+    color: #ffffff;
+}
+a {
+    color: #ffffff;
+}
+
+
+/* verify password */
+
+.verify {
+    width: 420px;
+    background: #343333;
+    color: #ffffff;
+}
+
+.verify h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.verify .inputbox1 {
+    width: 100%;
+    height: 50px;
+}
+
+
+/* sign up page */
+
+#title2 {
+    color: #ff0f0f;
+    font-family: League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    width: auto;
+    height: 75px;
+    margin-left: 687px;
+    margin-top: 100px;
+}
+
+.signup {
+    width: 400px;
+    height: 470px;
+    background: #343333;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: auto;
+    margin-top: -10px;
+}
+
+.signup h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.signup .inputbox2 {
+    width: 100%;
+    height: 50px;
+}

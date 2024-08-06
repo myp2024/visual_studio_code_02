@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Guest onboarding Home | Smmartist</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!--styles-->
+<style>
+
+    body {
+        background-color: #585858;
+    }
+
+    .top-bar {
+        width: auto;
+        height: 75px;
+        background-color: #343333;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #search-bar {
+        height: 25px;
+        width: 400px;
+        border-width: 3px;
+        border-radius: 5px;
+        border-color: #ff0f0f;
+        vertical-align: 95%;
+    }
+
+    .options-bar {
+        background-color: #343333; 
+        border-width: 0px; 
+        border-color: #ff0f0f; 
+        max-height: 400px; 
+        flex: 1.5;
+        border-radius: 5px;
+    }
+
+    #options {
+        color: #ffffff;
+        background-color: #343333;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        width: 362px; 
+        min-height: 70px;
+    }
+
+    #options:hover {
+        color: #ffffff;
+        background-color: #292828;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        width: 362px; 
+        min-height: 70px;
+        border-radius: 5px;
+    }
+
+</style>
+
+
+<head>
+    
+</head>
+
+<body>
+    <!--top bar-->
+    <div class="top-bar"> 
+        <div>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <a href="guest.html" ><img src="website_logo4.png" style="width: 60px;"></a>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <input type="text" id="search-bar" placeholder="search for people or martial arts">
+            <img src="search1.png" style="width: 40px; vertical-align: 25%;">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <img src="pfp.jpg" style="width: 40px; border-radius: 85%;">
+        </div>
+    </div>
+
+    <!--content area-->
+    <div style="width: 1450px; margin: auto; max-height: 610px;">
+        <div style="display: flex;">
+            <!--menu area-->
+            <div class="options-bar">
+                <div id="options" onclick="location.href='guest.html'">
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    <a href="guest.html" style="color: #ffffff; text-decoration: none; vertical-align: -25px;">Home</a>
+                </div>
+                <div id="options" onclick="location.href='direct_message.html'">
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp
+                    <a href="direct_message.html" style="color: #ffffff; text-decoration: none; vertical-align: -25px;">Direct Message</a>
+                </div>
+                <div id="options" onclick="location.href='f2f_sparring.html'">
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp &nbsp 
+                    <a href="f2f_sparring.html" style="color: #ffffff; text-decoration: none; vertical-align: -25px;">F2F Sparring</a>
+                </div>
+            </div>
+
+            <!--posts area-->
+            <div style="background-color: purple; min-height: 1550px; flex: 3.5;">
+                <div id="posts_bar">
+                </div>
+            </div>
+            
+            <!--settings area-->
+            <div style="background-color: blue; max-height: 400px; flex: 1;"></div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>

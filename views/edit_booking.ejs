@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Booking F2F Sparring || Smmartist</title>
+</head>
+<body>
+    
+    <% if (booking) { %>
+        <form action="/editbooking/<%= booking.tanah_id %>" method="POST">
+            <label for="id">Day</label>
+            <input type="text" id="day" name="day" value = <%= booking.day %> required><br><br>
+
+            <label for="id">Time</label>
+            <input type="text" id="time" name="time" value = <%= booking.time %> required><br><br>
+
+            <button type="submit">Update booking</button>
+        </form>
+    <% } %>
+
+</body>
+</html>

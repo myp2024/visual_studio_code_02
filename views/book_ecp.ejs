@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>East Coast Park Area D | Smmartist</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+    body {
+        background-color: #585858;
+    }
+
+    .top-bar {
+        width: auto;
+        height: 75px;
+        background-color: #343333;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #search-bar {
+        height: 25px;
+        width: 400px;
+        border-width: 3px;
+        border-radius: 5px;
+        border-color: #ff0f0f;
+        vertical-align: 95%;
+    }
+
+    #titles {
+        background-color: #000000;
+        color: #ffffff;
+        width: 150px;
+        height: 50px;
+        margin-left: 330px;
+        margin-top: 75px;
+        font-size: 55px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+    }
+
+    #boxes1 {
+        background-color: orange;
+        width: 60px;
+        margin-left: 330px;
+        margin-top: 75px;
+    }
+
+    #boxes2 {
+        background-color: orange;
+        width: 100px;
+        margin-left: 50px;
+        margin-top: 75px;
+    }
+
+</style>
+
+<head>
+
+</head>
+
+<body>
+    <!--top bar-->
+    <div class="top-bar"> 
+        <div>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <a href="guest" ><img src="website_logo4.png" style="width: 60px;"></a>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <input type="text" id="search-bar" placeholder="search for people or martial arts">
+            <img src="search1.png" style="width: 40px; vertical-align: 25%;">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <img src="pfp.jpg" style="width: 40px; border-radius: 85%;">
+        </div>
+    </div>
+
+    <form action="/book_ecp" method="POST">
+        <!--date-->
+        <div id="titles">date</div>
+        <div style="display: flex;">
+            <div id="boxes1">Tuesday<input type="radio" name="day" value="T"></div>
+            <div id="boxes1">Friday<input type="radio" name="day" value="F"></div>
+        </div>
+
+        <!--time-->
+        <div id="titles">Time</div>
+        <div style="display: flex;">
+            <div id="boxes2" style="margin-left: 330px;">15:30 to 16:30<input type="radio" name="time" value="16:30 to 17:30"></div>
+            <div id="boxes2">17:30 to 18:30<input type="radio" name="time" value="17:30 to 18:30"></div>
+            <div id="boxes2">18:30 to 19:30<input type="radio" name="time" value="18:30 to 19:30"></div>
+            <div id="boxes2">19:30 to 20:30<input type="radio" name="time" value="19:30 to 20:30"></div>
+            <div id="boxes2">20:30 to 21:30<input type="radio" name="time" value="20:30 to 21:30"></div>
+        </div>
+        <button type="submit" style="background-color: white; width: 50px; margin-top: 50px; margin-left: 1070px;">submit</button>
+
+        <div style="background-color: white; width: 50px;"><a href="f2f_sparring">back</a></div>
+    </form>
+
+</body>
+</html>

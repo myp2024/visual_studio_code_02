@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>F2F Sparring Schedule | Smmartist</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+    body {
+        background-color: #585858;
+    }
+
+    .top-bar {
+        width: auto;
+        height: 75px;
+        background-color: #343333;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #search-bar {
+        height: 25px;
+        width: 400px;
+        border-width: 3px;
+        border-radius: 5px;
+        border-color: #ff0f0f;
+        vertical-align: 95%;
+    }
+
+    #venues{
+        background-color: #000000;
+        color: #ffffff;
+        width: 150px;
+        height: 50px;
+        margin-left: 330px;
+        margin-top: 75px;
+        font-size: 55px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+    }
+
+    #edit1 {
+        color: black;
+        text-decoration: none;
+    }
+
+    #delete1 {
+        color: black;
+        text-decoration: none;
+    }
+
+
+</style>
+
+<head>
+
+</head>
+
+<body>
+    <!--top bar-->
+    <div class="top-bar"> 
+        <div>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <a href="guest" ><img src="website_logo4.png" style="width: 60px;"></a>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <input type="text" id="search-bar" placeholder="search for people or martial arts">
+            <img src="search1.png" style="width: 40px; vertical-align: 25%;">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <img src="pfp.jpg" style="width: 40px; border-radius: 85%;">
+        </div>
+    </div>
+
+<!--display venues-->
+
+    <div id="venues">venues</div>
+    <div class="venue-options" style="display: flex;">
+        <div>
+            <img src="tanah_merah_playground1.jpeg">
+            <p>Tanah Merah Playground</p>
+            <p>Tanah Merah Kechil Ave, Singapore 465794</p>
+            <div style="background-color: white; width: 50px;"><a href="book_tanah" style="text-decoration: none;">book</a></div>
+        </div>
+        <div>
+            <img src="ecp_area_d.png">
+            <p>East Coast Park Area D</p>
+            <p>1206 ECP, #01-07/08, Singapore 449883</p>
+            <div style="background-color: white; width: 50px;"><a href="book_ecp" style="text-decoration: none;">book</a></div>
+        </div>
+        <div>
+            <img src="punggol_park.png">
+            <p>Punggol Park</p>
+            <p>Hougang Ave 10, Punggol Park, Singapore 538768</p>
+            <div style="background-color: white; width: 50px;"><a href="book_punggol" style="text-decoration: none;">book</a></div>
+        </div>
+    </div>
+    <div id="venues">bookings</div>
+
+    <div style="margin-top: 50px; margin-left: 400px;">
+        <table style="background-color: white; border-radius: 5px; width: 300px;">
+            <thead>
+                <tr>
+                    <td>no.</td>
+                    <td style="margin-left: 50px;">Day</td>
+                    <td style="flex: 1;">Time</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let i=0; i < book_tanah.length; i++) { %>
+                    <tr>
+                        <td><a href="/booking/<%= book_tanah[i].tanah_id %>" ><%= book_tanah[i].tanah_id %></a></td>
+                        <td><%= book_tanah[i].day %></td>
+                        <td><%= book_tanah[i].time %></td>
+                        <!-- Edit Link -->
+                        <td style="background-color: orange; border-color: black; border-width: 5px; border-radius: 3px; margin-left: 50px;"><a id="edit1" href="/editbooking/<%= book_tanah[i].tanah_id %>">Edit</a></td>
+                        <!-- Delete Link -->
+                        <td style="background-color: orange; border-color: black; border-width: 5px; border-radius: 3px; margin-left: 50px;"><a id="delete1" href="/deletebooking/<%= book_tanah[i].tanah_id %>" onclick="return confirm('Are you sure you want to delete this booking?')">Delete</a></td>
+                    </tr>
+                    
+                <% } %>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
